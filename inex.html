@@ -1,10 +1,42 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Unbenanntes Dokument</title>
-</head>
+	<head>
+		<meta charset="utf-8">
+		<title>Unbenanntes Dokument</title>
+		<link rel="stylesheet" href="style/filter.css">
+		<link rel="stylesheet" href="style/main.css">
+		<link rel="stylesheet" href="style/header.css">
+		<link rel="stylesheet" href="style/list.css">
+	</head>
 
-<body>
-</body>
+	<body>
+		<main>
+			<header>
+				<h1>Notenspiegel</h1>
+			</header>
+			
+			<div id="filterContainer">
+				<div id="breakLine"></div>
+				<div id="filters">
+					<div>Klasse</div>
+					<div>Schüler</div>
+					<div>Fach</div>
+				</div>
+			</div>
+			
+			<div id="list">
+				<table>
+					<tr>
+						<th>Klasse</th>
+						<th>Schüler</th>
+						<th>Fächer</th>
+						<th>Note</th>
+					</tr>
+					<tr>
+						<td colspan="4" id="add">+</td>
+					</tr>
+				</table>
+			</div>
+		</main>
+	</body>
 </html>
