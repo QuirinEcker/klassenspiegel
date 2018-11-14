@@ -20,10 +20,20 @@
 	background-color: lightgreen;
 	cursor: pointer;
 	transition: 0.5s all;
-	font-size: 50px;
-	
+	border-radius: 5px;
+	font-size: 50;
+}
+
+#placehoder {
+	height: 50px;
 }
 
 #list #add:hover {
 	opacity: 0.5;
+}
+
+#addFormular {
+	width: 90%;
+	padding: 5%;
+	background-color: gray;
 }
