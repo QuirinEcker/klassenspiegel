@@ -24,25 +24,32 @@
 						<th>Fächer</th>
 						<th>Note</th>
 					</tr>
-					<tr id="placehoder"></tr>
+					<!--toImplement-->
 					<tr>
 						<td colspan="4" id="addContent">
 							<form action="" id="addFormular">
-								<div><input type="text"></div>
-								<div><input type="text"></div>
-								<div>
-									<select>
-										<option value=""> Mathematik</option>
-										<option value="">Deutsch</option>
-										<option value="">Medientechnik</option>
-									</select>
+								<div id="formular">
+									<div><input type="text"></div>
+									<div><input type="text"></div>
+									<div>
+										<select>
+											<option value=""> Mathematik</option>
+											<option value="">Deutsch</option>
+											<option value="">Medientechnik</option>
+										</select>
+									</div>
+									<div><input type="number"></div>
 								</div>
-								<div><input type="number"></div>
+								<div id="submitButton">
+									<div onClick="submit()">submit</div>
+									<div onClick="cancel()">cancel</div>
+								</div>
 							</form>
 						</td>
 					</tr>
+					<tr id="placehoder"></tr>
 					<tr>
-						<td colspan="4" id="add">+</td>
+						<td colspan="4" id="add" onClick="add()">+</td>
 					</tr>
 				</table>
 			</div>
