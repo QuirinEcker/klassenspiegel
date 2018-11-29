@@ -7,6 +7,8 @@
 		<link rel="stylesheet" href="style/main.css">
 		<link rel="stylesheet" href="style/header.css">
 		<link rel="stylesheet" href="style/list.css">
+		<link rel="stylesheet" href="style/newEntry.css">
+		<script type="text/javascript" src="scripts/script.js"></script>
 	</head>
 
 	<body>
@@ -17,40 +19,49 @@
 
 		<main>
 			<div id="list">
-				<table>
-					<tr>
-						<th>Klasse</th>
-						<th>Schüler</th>
-						<th>Fächer</th>
-						<th>Note</th>
-					</tr>
-					<!--toImplement-->
-					<tr>
-						<td colspan="4" id="addContent">
-							<form action="" id="addFormular">
-								<div id="formular">
-									<div><input type="text"></div>
-									<div><input type="text"></div>
-									<div>
-										<select>
-											<option value=""> Mathematik</option>
-											<option value="">Deutsch</option>
-											<option value="">Medientechnik</option>
-										</select>
+				<table id="Tabelle">
+					<thead>
+						<tr>
+							<th>Klasse</th>
+							<th>Schüler</th>
+							<th>Fächer</th>
+							<th>Note</th>
+						</tr>
+					</thead>
+					
+					<tbody>	
+					</tbody>
+					
+					<tfoot>
+						<tr id="addContentRow">
+							<td colspan="4" id="addContent">
+								<form id="addFormular">
+									<div id="formular">
+										<div><input class="addInputField" type="text"></div>
+										<div><input class="addInputField" type="text"></div>
+										<div>
+											<select class="addInputField" id="fach">
+												<option value="null">select a Subject</option>
+												<option value="Mathematik">Mathematik</option>
+												<option value="Deutsch">Deutsch</option>
+												<option value="Medientechnik">Medientechnik</option>
+											</select>
+										</div>
+										<div><input class="addInputField" type="number"></div>
 									</div>
-									<div><input type="number"></div>
-								</div>
-								<div id="submitButton">
-									<div onClick="submit()">submit</div>
-									<div onClick="cancel()">cancel</div>
-								</div>
-							</form>
-						</td>
-					</tr>
-					<tr id="placehoder"></tr>
-					<tr>
-						<td colspan="4" id="add" onClick="add()">+</td>
-					</tr>
+									<div id="submitButton">
+										<div onClick="submit()" class="button" id="submit">submit</div>
+										<div onClick="cancel()" class="button" id="cancel">cancel</div>
+									</div>
+								</form>
+							</td>
+						</tr>
+						<tr id="placehoder"><td colspan="4"></td></tr>
+						<tr>
+							<td colspan="4" id="add" onClick="add()">+</td>
+						</tr>
+
+					</tfoot>
 				</table>
 			</div>
 		</main>
